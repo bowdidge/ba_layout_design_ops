@@ -1,0 +1,117 @@
+﻿body {
+    background-color: #D4E7B2;   /** #fbc473 (Lt orange); #bfe2f9 (lt blue); #a4d4b0(2020); #D4E7B2 (Lt Yellow);  #FFF99D (Brt Yellow); #00D5FF (Med Blue);   **/
+}
+p {
+    margin: 25px;
+}
+table {
+    margin-left:	35px;
+}
+p a:link {
+    color: blue;
+}
+p a:visited {
+    color: blue;
+}
+p a:hover {
+    color: green;
+}
+#pageNavLinks a {
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom-style: none;
+    padding: .7em;
+    
+    font-size: 1.1em;
+    color: #000000;
+    /*font-style: italic;*/
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+#pageNavLinks a:hover {
+    text-decoration: underline;
+}	
+.pageTop {
+    font-size: .7em;
+    font-style: italic;
+}		
+.tableCenter {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 25px;
+}
+.redNEW
+{
+    font-weight:          bold;
+    color:          #FF0000;
+}
+.layoutLinks li {
+    margin-bottom: .7em;
+    margin-left: 2em;
+}	
+.panelists li {
+    margin-bottom: .3em;
+    margin-left: 2em;
+}		
+
+.startTime
+{
+    text-align: center;
+    width: 130px;
+}
+.valid-xhtmlDiv a:hover {
+    text-decoration:  none;
+    border-bottom: 	solid 0px #f00;		/* red */
+}
+
+.agenda {
+    padding-left:          0px;
+}
+
+.eventName	 {
+    font-weight:          bolder;
+    text-align:          center;
+    font-size:			xx-large;
+}
+
+.sponsors   {
+    font-weight:          bolder;
+    text-align:          center;
+    font-size:			1.25em;
+}
+
+.valid-xhtmlDiv {
+    text-align: center;
+    padding-top:			15px;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.reqStar {
+    font-size:	1.5em;
+}
+
+img {
+    margin-left: 10px;	
+    border: 2px #121212 solid;
+}
+
+body {
+    font-family:  Arial, Helvetica, sans-serif;	
+    font-weight:	bold;
+}
+
+.separator {
+    border-style: solid none none none;
+    border-width: medium;
+    border-color: #000000;
+}
+
+.separatorDouble {
+    border-style: double none none none;
+    border-width: thick;
+    border-color: #000000;
+}	 	
+
+

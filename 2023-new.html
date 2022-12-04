@@ -1,0 +1,323 @@
+b<html>
+  <head>
+    <title>Bay Area Layout Design and Ops Meet</title>
+    <style>
+      .titleblock {
+	  width: 100%;
+	  height: 200px;
+      }
+      .keypic {
+	  width: 200px;
+	  height: 200px;
+	  float: left;
+	  background-color: tan;
+	  border: solid brown;
+      }
+      .foo {
+	  height: 200px;
+	  float: right;
+      }
+      .title {
+	  height: 60px;
+	  width: 100%;
+      }
+      .details {
+	  height: 120px;
+	  width: 100%;
+	  text-align: right;
+      }
+      .urgent {
+	  background-color: #fee;
+	  border: solid red;
+	  padding: 20px;
+	  margin: 20px;
+      }
+      .rest {
+	  width: 100%;
+      }
+      .tabs {
+      }
+
+      /* Style the tab for selecting pages of content.*/
+      .tab {
+	  overflow: hidden;
+	  border: 1px solid #ccc;
+	  background-color: #f1f1f1;
+      }
+
+      /* Style the buttons that are used to open the tab content */
+      .tab button {
+	  background-color: inherit;
+	  float: left;
+	  border: none;
+	  outline: none;
+	  cursor: pointer;
+	  padding: 14px 16px;
+	  transition: 0.3s;
+	  font-size: 130%;
+      }
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+    </style>
+    <script>
+      function openTab(evt, tabName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+      }
+
+      function onLoad() {
+	  document.getElementById("defaultOpen").click();
+      }
+    </script>
+  </head>
+  <body onLoad="onLoad()">
+    <div class="titleblock">
+      <div class="keypic">
+	Clinics
+	<br>
+	Layout Tours
+	<br>
+	Operating Sessions
+	<br>
+	Prototype Tour
+      </div>
+      <div class="foo">
+	<div class="title">
+	  <h1>2023 San Francisco Bay Area<br> Layout Design and Ops Meet</h1>
+	</div>
+	<div class="details">
+	  <h2>
+	    February 3-5, 2023
+	    <br>
+	    Golden State Model Railroad Museum
+	    <br>
+	    Richmond, CA
+	  </h2>
+	</div>
+      </div>
+    </div>
+    <div class="rest">
+      <div class="urgent">
+	<!-- Text for anything urgent -->
+	<b>Latest News</b>:
+	<ul>
+	  <li>
+	    Attend Saturday's clinics in-person (with lunch) for $40 or virtually via Zoom.
+	    In-person tickets are limited and will not be available at the door. <a href="">Sign up here.</a>
+	  </li>
+	  <li>Space available on Friday tour of Richmond Pacific Railroad!</li>
+	</ul>
+      </div>
+      <div class="tab">
+	<button class="tablinks" id="defaultOpen" onclick="openTab(event, 'Welcome')">Welcome</button>
+	<button class="tablinks" onclick="openTab(event, 'Schedule')">Schedule</button>
+	<button class="tablinks" onclick="openTab(event, 'Prototype Tour')">Prototype Tour</button>
+	<button class="tablinks" onclick="openTab(event, 'Activities')">Activities</button>
+	<button class="tablinks" onclick="openTab(event, 'Tickets')">Tickets</button>
+	<button class="tablinks" onclick="openTab(event, 'Contact')">Contact</button>
+      </div>
+
+      <div id="Welcome" class="tabcontent">
+      <p>
+	Welcome to the 2023 S.F. Bay Area Layout Design &amp; Operations Meet!
+	This will be our xxth annual meet!
+      </p>
+      <p>
+	The Bay Area Layout Design and Operations meet is a model
+	railroading event for modelers interested in model railroad design,
+	model railroad operations, railroad and local history, or
+	any related topic.
+      </p>
+      <p>
+	The event is a mix of clinics and talks, in-person events,
+	and tours of model railroads in the San Francisco Bay Area.
+	We also invite attendees to participate in operating sessions 
+	on local model railroads, and especially invite folks who haven't
+	done operations before to join in.
+	If you've like feedback or advice on model railroad design,
+	you can sign up for a
+	<a href="#consultations">layout design consulting session</a>
+	where you can brainstorm or seek advice from other modelers
+	about your future layout design.
+      </p>
+      <p>
+	This meet is open to ALL, regardless of club affiliation or
+	membership. NMRA, PCR, LDSIG, or SBHRS membership is NOT
+	required!
+      </p>
+      <p>
+	The 2023 meet, like last year, will be a hybrid event.
+	You can attend <a href="#clinic_schedule">Saturday clinics</a>
+	in-person at the Golden State
+	Railroad Museum in Richmond, CA, or you can partipate in the
+	clinics via Zoom.
+      </p>
+      <p>
+	Friday's tour and dinner, Saturday night layout tours, and
+	Sunday operating sessions are in person.
+      </p>
+      </div>
+      
+      <div id="Schedule" class="tabcontent">
+      <h2>
+	Friday, February 3 - Tour and Dinner
+      </h2>
+      <p>
+	Tour of Richmond Pacific Railroad, the terminal railroad
+	serving industries around the Richmond waterfront.
+	<b>Sign-up required</b>.
+	</p>
+      <p>
+	Group dinner afterwards.
+      </p>
+      <a name="clinic_schedule">
+	<h2>
+	  Saturday, February 4 - Clinics Day
+	</h2>
+      </a>
+      <p>
+	You can attend Saturday's clinics and talks
+	in person at the
+	Golden State Railroad Museum in Point Richmond or
+	virtually via a Zoom meeting.
+	Clinics will be from 9:00 am to 5:00 pm PST.
+      </p>
+      <h2>Tentative Schedule for Saturday:</h2>
+      <table class="agenda" style="border-spacing: 0 10px;">
+	<tr style="text-decoration: underline;">
+	  <td style="font-weight: bold; text-align:center;">TIME</td>
+	  <td style="font-weight: bold;">TOPIC</td>
+	  <td style="font-weight: bold;">PRESENTER</td>
+	</tr>	
+	<tr>
+	  <td class="startTime">&nbsp;&nbsp;8:00</td>
+	  <td colspan="2">ZOOM room opens</td>	
+	</tr>
+	<tr>
+	  <td class="startTime">&nbsp;&nbsp;8:30</td>
+	  <td>Registration &amp; Opening Remarks</td>
+	  <td>
+	    Seth Neumann, Chairman
+	  </td>
+	</tr>
+	<tr>
+	  <td class="startTime">&nbsp;&nbsp;9:00</td>
+	  <td style="width: 350px;">Automated Trains using JMRI</td>
+	  <td>David Parks</td>
+	</tr>
+	<tr>
+	  <td class="startTime">10:00</td>
+	  <td>Yard Ops &mdash; Western Style</td>
+	  <td>Mark Amfahr</td>
+	</tr>
+	<tr>
+	  <td class="startTime">11:00</td>
+	  <td>New Layout Design</td>
+	  <td>Dave Clemens</td>
+	</tr>
+	<tr>
+	  <td class="startTime">Noon</td>
+	  <td colspan="2">Lunch Break / Birds of a Feather Discussions</td>
+	</tr>
+	<tr>
+	  <td class="startTime">&nbsp;&nbsp;1:15</td>
+	  <td>Pacific Fruit Express (PFE) Operations</td>
+	  <td>Robert Leachman</td>
+	</tr>
+	<tr>
+	  <td class="startTime">&nbsp;&nbsp;2:15</td>
+	  <td>Design Challenge (<a href="#challenge">Details</a>)</td>
+	  <td>Robert Bowdidge, moderator</td>
+	</tr>
+	<tr>
+	  <td class="startTime">&nbsp;&nbsp;4:45</td>
+	  <td>Closing Remarks</td>
+	  <td>Seth Neumann</td>
+	</tr>
+      </table>
+      <h2>
+	Saturday evening, February 4: Layout Tours
+      </h2>
+      Visit layouts in Alameda and Contra Costa Counties on Saturday night.
+      Open layouts include:
+      <ul>
+	<li>A</li>
+	<li>B</li>
+      </ul>
+      <h2>Sunday, Februrary 5: Operating Sessions</h2>
+	<p>
+	  As in past years, attendees are invited to participate in a
+	  model railroad operating session on one of the layouts in the
+	  area.  Operating sessions associated with the meet will happen
+	  on Sunday.  Times for each layout may vary, but generally
+	  will be between 9:00 am and 5:00 pm.
+	</p>
+	<p>
+	  If you're interested in joining in, mark your interest
+	  when you sign up for the meet.  In January, organizers will
+	  ask which layouts you'd like to operate on and assign
+	  you to one of your choices before the meet.
+	</p>
+      </h2>
+</div>
+
+<div class="Prototype Tour" class="tabcontent">
+	<h2>Friday: Richmond Pacific Railroad Tour</h2>
+</div>
+      <div id="Activities" class="tabcontent">
+	<h2>Saturday Clinics: Bring an Exhibit</h2>
+	<h2>Saturday Clinics: Share a Layout Design</h2>
+	<h2>Saturday Night: Layout Tours</h2>
+	<h2>Sunday: Participate in an Operating Session</h2>
+      </div>
+      
+      <div id="Tickets" class="tabcontent">
+	<p>
+	  You can attend the clinics in two ways: in-person at the Golden State Model Railroad Museum, or virtually on a Zoom call.  Space at the Museum is limited.  Ticket includes lunch.
+	</p>
+	<p>
+	  Other activities (Richmond Pacific Railroad tour, layout tours,
+	  and operating sessions) are all in-person and available for
+	  in-person and virtual attendees.
+	</p>
+      </div>
+      
+      <div id="Contact" class="tabcontent">
+	Here's contact info.
+      </div>
+      
+    </div>
+  </body>
+</html>
