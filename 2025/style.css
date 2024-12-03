@@ -60,3 +60,27 @@
     margin: 0.5%;
     float: left;
 }
+
+.sponsor_logo {
+    width: 128px;
+    margin: 4px;
+    float: left;
+}
+
+.schedule_time_cell {
+    width: 25%;
+}
+
+.schedule_activity_cell {
+    width: 70%;
+}
+
+dt {
+    font-weight: bold;
+    font-size: 125%;
+    padding-top: 10px;
+}
+
+dd {
+}
+
