@@ -41,13 +41,21 @@
     font-size: large;
 }
 
+/* Single line of essential news */
 .alert {
     border: solid;
     font-weight: bold;
     font-size: x-large;
     background-color: #fee;
 }
-    
+
+/* Block of text in div with time-critical news */
+.update {
+    border: solid red;
+    text-indent: 10px;
+    background-color: #fee;
+}
+
 .imagetile {
     width: 96%;
     aspect-ratio: 3/1;
